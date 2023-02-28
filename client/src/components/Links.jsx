@@ -19,7 +19,7 @@ const Links = () => {
         return (
             <React.Fragment>
                 <Link to="/" className="navbar-brand">
-                    My first MERN Application
+                    DAO Site
                 </Link>
                 <Collapse>
                     <List>
