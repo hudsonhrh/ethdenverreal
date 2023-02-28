@@ -15,8 +15,13 @@ app.use(express.urlencoded({extended: false}))
 // get driver connection
 const dbo = require("./db/conn");
 
-//const userRouter = require('./routes/users')
-//app.use('/users', userRouter)
+app.get('/', (req, res) => {
+    res.send('Hello, world!');
+});
+
+
+const userRouter = require('./routes/user')
+app.use('/user', userRouter)
 
 
 
