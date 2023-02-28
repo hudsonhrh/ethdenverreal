@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 const App = () =>{
     return (
         <Router>
-            <NavBar />
+            <NavBar fixed="top" />
             <Routes>
                 <Route path="/" exact element={<Landing/>} />
                 <Route path="/vote" exact element={<Vote/>} />

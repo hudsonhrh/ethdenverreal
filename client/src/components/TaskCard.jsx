@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 
 function TaskCard() {
   return (
-    <Card style={{ width: "10rem", display: "flex", justifyContent: "center"}}>
+    <Card style={{ width: "80%", display: "flex", justifyContent: "center", marginBottom: "4%"}}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>

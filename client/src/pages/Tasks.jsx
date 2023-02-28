@@ -4,11 +4,9 @@ import Stack from "react-bootstrap/Stack";
 import TaskCard from "../components/TaskCard";
 
 const Column = styled.div`
-  background: black;
-  float: left;
   height: 100%;
-  width: 23%;
-  display: flex;
+  width: 20%;
+  display: table-cell;
   justify-content: center;
   margin: 5%;
 `;
@@ -21,51 +19,56 @@ const Wrapper = styled.section`
   height: 100%;
 `;
 
-const StackedColumn = styled(Stack)`
-  justifyContent: "center",
-  display: "flex",
-  alignItems: "center",
-`
-
 const Tasks = () => {
   return (
-    <Wrapper>
-      <Column>
-        <Stack
-          style={{
-            justifyContent: "center",
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
-          <TaskCard>task1</TaskCard>
-          <TaskCard>task1</TaskCard>
-          <TaskCard>task1</TaskCard>
-        </Stack>
-      </Column>
-      <Column>
-        <Stack style={{
-            justifyContent: "center",
-            display: "flex",
-            alignItems: "center",
-          }}>
-          <TaskCard>task1</TaskCard>
-          <TaskCard>task1</TaskCard>
-          <TaskCard>task1</TaskCard>
-        </Stack>
-      </Column>
-      <Column>
-        <Stack style={{
-            justifyContent: "center",
-            display: "flex",
-            alignItems: "center",
-          }}>
-          <TaskCard>task1</TaskCard>
-          <TaskCard>task1</TaskCard>
-          <TaskCard>task1</TaskCard>
-        </Stack>
-      </Column>
-    </Wrapper>
+    <>
+      <Wrapper>
+        <Column>
+          <Stack
+            style={{
+              justifyContent: "center",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <h1>Open Tasks</h1>
+            <TaskCard>task1</TaskCard>
+            <TaskCard>task1</TaskCard>
+            <TaskCard>task1</TaskCard>
+          </Stack>
+        </Column>
+
+        <Column>
+          <Stack
+            style={{
+              justifyContent: "center",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <h1>In Progress</h1>
+            <TaskCard>task1</TaskCard>
+            <TaskCard>task1</TaskCard>
+            <TaskCard>task1</TaskCard>
+          </Stack>
+        </Column>
+
+        <Column>
+          <Stack
+            style={{
+              justifyContent: "center",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <h1>In Review</h1>
+            <TaskCard>task1</TaskCard>
+            <TaskCard>task1</TaskCard>
+            <TaskCard>task1</TaskCard>
+          </Stack>
+        </Column>
+      </Wrapper>
+    </>
   );
 };
 

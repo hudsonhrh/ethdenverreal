@@ -16,11 +16,12 @@ const Nav = styled.nav.attrs({
   margin-bottom: 20 px;
   width: 100%;
   align-items: right;
+  fixed: top;
 `;
 
 const NavBar = () => {
   return (
-    <Nav>
+    <Nav fixed="top">
       <Logo />
       <Container fluid style={{ display: "flex", justifyContent: "flex-end" }}>
         <Links style={{ justifyContent: "right" }} />
