@@ -14,8 +14,7 @@ const Nav = styled.nav.attrs({
     margin-bottom: 20 px;
 `
 
-class NavBar extends Component {
-    render() {
+const NavBar = () => {
         return (
             <Container>
                 <Nav>
@@ -24,7 +23,7 @@ class NavBar extends Component {
                 </Nav>
             </Container>
         )
-    }
+    
 }
 
 export default NavBar

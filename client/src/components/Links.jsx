@@ -14,8 +14,8 @@ const Item = styled.div.attrs({
     className: 'collpase navbar-collapse',
 })``
 
-class Links extends Component {
-    render() {
+const Links = () => {
+  
         return (
             <React.Fragment>
                 <Link to="/" className="navbar-brand">
@@ -24,20 +24,30 @@ class Links extends Component {
                 <Collapse>
                     <List>
                         <Item>
-                            <Link to="/movies/list" className="nav-link">
-                                List Movies
+                            <Link to="/leaderboard" className="nav-link">
+                                Leaderboard
                             </Link>
                         </Item>
                         <Item>
-                            <Link to="/movies/create" className="nav-link">
-                                Create Movie
+                            <Link to="/tasks" className="nav-link">
+                                Tasks
+                            </Link>
+                        </Item>
+                        <Item>
+                            <Link to="/vote" className="nav-link">
+                                Vote
+                            </Link>
+                        </Item>
+                        <Item>
+                            <Link to="/profile" className="nav-link">
+                                Profile
                             </Link>
                         </Item>
                     </List>
                 </Collapse>
             </React.Fragment>
-        )
-    }
+        );
+    
 }
 
-export default Links
+export default Links;
