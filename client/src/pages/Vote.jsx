@@ -31,7 +31,7 @@ const Vote = () => {
               alignItems: "center",
             }}
           >
-            <h1>Open Proposals</h1>
+            <h2>Open Proposals</h2>
             <ProposalCard>task1</ProposalCard>
             <ProposalCard>task1</ProposalCard>
             <ProposalCard>task1</ProposalCard>
@@ -46,7 +46,7 @@ const Vote = () => {
               alignItems: "center",
             }}
           >
-            <h1>Passed Proposals</h1>
+            <h2>Passed Proposals</h2>
             <ProposalCard>task1</ProposalCard>
             <ProposalCard>task1</ProposalCard>
             <ProposalCard>task1</ProposalCard>
@@ -61,7 +61,7 @@ const Vote = () => {
               alignItems: "center",
             }}
           >
-            <h1>Rejected Proposals</h1>
+            <h2>Rejected Proposals</h2>
             <ProposalCard>task1</ProposalCard>
             <ProposalCard>task1</ProposalCard>
             <ProposalCard>task1</ProposalCard>

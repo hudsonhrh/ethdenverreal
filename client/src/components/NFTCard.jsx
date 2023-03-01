@@ -8,7 +8,6 @@ const NFTCard = () => {
     <>
     <img src={TempImage} alt="image"></img>
     <Card style={{ width: "80%", display: "flex", justifyContent: "center", marginBottom: "4%"}}>
-      <Card.Img variant="top" src={TempImage} alt="NFT"/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
