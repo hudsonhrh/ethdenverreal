@@ -19,7 +19,37 @@ const Wrapper = styled.section`
   height: 100%;
 `;
 
+const SectionTitle = styled.h1`
+  margin-bottom: 10%;
+`;
+
+const mockTaskData = [
+  {
+    title: "Open Task 1",
+    description: "Long description of open task 1",
+    status: "open",
+  },
+  {
+    title: "Open Task 2",
+    description: "Long description of open task 2",
+    status: "open",
+  },
+  {
+    title: "Open Task 3",
+    description: "Long description of open task 3",
+    status: "open",
+  },
+];
+
 const Tasks = () => {
+  const items = mockTaskData.map((item) => (
+    <TaskCard
+      title={item.title}
+      description={item.description}
+      status={item.status}
+    ></TaskCard>
+  ));
+
   return (
     <>
       <Wrapper>
@@ -31,7 +61,20 @@ const Tasks = () => {
               alignItems: "center",
             }}
           >
-            <h1>Open Tasks</h1>
+            <SectionTitle>Open Tasks</SectionTitle>
+            {items}
+          </Stack>
+        </Column>
+
+        <Column>
+          <Stack
+            style={{
+              justifyContent: "center",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <SectionTitle>In Progress</SectionTitle>
             <TaskCard>task1</TaskCard>
             <TaskCard>task1</TaskCard>
             <TaskCard>task1</TaskCard>
@@ -46,22 +89,7 @@ const Tasks = () => {
               alignItems: "center",
             }}
           >
-            <h1>In Progress</h1>
-            <TaskCard>task1</TaskCard>
-            <TaskCard>task1</TaskCard>
-            <TaskCard>task1</TaskCard>
-          </Stack>
-        </Column>
-
-        <Column>
-          <Stack
-            style={{
-              justifyContent: "center",
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <h1>In Review</h1>
+            <SectionTitle>In Review</SectionTitle>
             <TaskCard>task1</TaskCard>
           </Stack>
         </Column>
