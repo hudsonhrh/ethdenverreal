@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import NFTCard from "../components/TaskCard";
+import NFTCard from "../components/NFTCard";
 
 const Column = styled.div`
   height: 100%;

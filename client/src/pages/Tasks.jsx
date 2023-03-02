@@ -63,8 +63,6 @@ const Tasks = () => {
           >
             <h1>In Review</h1>
             <TaskCard>task1</TaskCard>
-            <TaskCard>task1</TaskCard>
-            <TaskCard>task1</TaskCard>
           </Stack>
         </Column>
       </Wrapper>

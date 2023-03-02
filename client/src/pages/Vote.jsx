@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Stack from "react-bootstrap/Stack";
-import ProposalCard from "../components/TaskCard";
+import ProposalCard from "../components/ProposalCard";
 
 const Column = styled.div`
   height: 100%;

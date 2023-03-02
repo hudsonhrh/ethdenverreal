@@ -4,7 +4,6 @@ import Card from "react-bootstrap/Card";
 function ProposalCard() {
   return (
     <Card style={{ width: "80%", display: "flex", justifyContent: "center", marginBottom: "4%"}}>
-      <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
