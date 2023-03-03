@@ -2,6 +2,8 @@
 pragma solidity ^0.8.0;
 
 //ignore these errors it compiles fine
+import "contracts/KUBIX.sol";
+
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -33,5 +35,14 @@ contract MyNFT is ERC721URIStorage, Ownable {
         _setTokenURI(newItemId, tokenURI);
 
         return newItemId;
+    }
+
+    function burn(uint256 tokenId) public {
+        require(_isApprovedOrOwner(_msgSender(), tokenId), "KUBImember: caller is not owner nor approved");
+        _burn(tokenId);
+    }
+
+    function beforeTokenTransfer(address, address, uint256) internal virtual override {
+        revert("KUBImember: transfer not allowed");
     }
 }
