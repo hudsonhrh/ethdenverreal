@@ -9,34 +9,36 @@ const Column = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap:30px;
 `;
 
-  let NFTArray=[]
 
 const Wrapper = styled.section`
   background: papayawhip;
   display: flex;
   height: 100%;
-  padding:0px;
-  flex: 1 1 1;
+  padding-left:15px;
+  padding-right:15px;
+  flex-direction:column;
+
 `;
 
 const NFTDisplay = () => {
   return (
-    <>
       <Wrapper>
             <Column>
               <NFTCard>task1</NFTCard>
               <NFTCard>task1</NFTCard>
               <NFTCard>task1</NFTCard>
+              </Column>
+              <br></br>
+              <Column>
               <NFTCard>task1</NFTCard>
               <NFTCard>task1</NFTCard>
               <NFTCard>task1</NFTCard>
             </Column>
       </Wrapper>
-    </>
   );
 };
 
