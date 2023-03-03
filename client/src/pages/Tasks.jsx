@@ -44,6 +44,7 @@ const mockTaskData = [
 const Tasks = () => {
   const items = mockTaskData.map((item) => (
     <TaskCard
+      key={item.title}
       title={item.title}
       description={item.description}
       status={item.status}
