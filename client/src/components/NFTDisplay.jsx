@@ -7,40 +7,38 @@ import NFTCard from "../components/NFTCard";
 
 const Column = styled.div`
   height: 100%;
-  width: 20%;
-  display: table-cell;
-  justify-content: center;
-  margin: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap:30px;
 `;
 
+
 const Wrapper = styled.section`
-  padding: 4em;
   background: papayawhip;
-  display: table;
-  width: 100%;
+  display: flex;
   height: 100%;
+  padding-left:15px;
+  padding-right:15px;
+  flex-direction:column;
+
 `;
 
 const NFTDisplay = () => {
   return (
-    <>
       <Wrapper>
-        <Container>
-          <Row>
-            <Col >
+            <Column>
               <NFTCard>task1</NFTCard>
               <NFTCard>task1</NFTCard>
               <NFTCard>task1</NFTCard>
-            </Col>
-            <Col >
+              </Column>
+              <br></br>
+              <Column>
               <NFTCard>task1</NFTCard>
               <NFTCard>task1</NFTCard>
               <NFTCard>task1</NFTCard>
-            </Col>
-          </Row>
-        </Container>
+            </Column>
       </Wrapper>
-    </>
   );
 };
 
