@@ -19,8 +19,10 @@ function IdentitySection() {
       }}>
       <Image src={temp_image} roundedCircle={true}
       style={{
+
         width:"200px",
         marginLeft:"40px"
+
       }}
       ></Image>
     </div>
