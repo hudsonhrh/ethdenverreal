@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Stack from "react-bootstrap/Stack";
 import TaskCard from "../components/TaskCard";
+import CreateTask from "../components/CreateTask";
 
 const Column = styled.div`
   height: 100%;
@@ -53,6 +54,7 @@ const Tasks = () => {
 
   return (
     <>
+    <CreateTask/>
       <Wrapper>
         <Column>
           <Stack

@@ -5,7 +5,9 @@ function IdentitySection() {
   return (
     <div
       style={{
-        width : ""
+
+        width: ""
+
     
       }}
     >
